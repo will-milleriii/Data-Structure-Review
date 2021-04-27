@@ -6,8 +6,13 @@ public class Stack {
     int count = 0;
 
     public void push(int data){
-        stack[count] = data;
-        count++;
+        if (count == 5){
+            System.out.println("Stack is full");
+        } else {
+            stack[count] = data;
+            count++;
+        }
+
     }
 
     public int pop(){
@@ -32,5 +37,10 @@ public class Stack {
 
     public int size(){
         return count;
+    }
+
+    public boolean isEmpty(){
+
+        return count <= 0;
     }
 }
