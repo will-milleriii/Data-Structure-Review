@@ -10,6 +10,8 @@ public class Main {
        list.insert(23);
        list.insert(45);
 
+       list.insertAtBeginning(21);
+
        list.showValues();
 
     }
