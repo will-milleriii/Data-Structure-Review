@@ -11,6 +11,7 @@ public class Main {
        list.insert(45);
 
        list.insertAtBeginning(21);
+       list.insertAtIndex(3, 11);
 
        list.showValues();
 
