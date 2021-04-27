@@ -57,6 +57,20 @@ public class LinkedList {
 
     }
 
+    public void deleteValueAtIndex(int index){
+        if (index == 0){
+            head = head.next;
+        } else {
+            Node n = head;
+            Node n1 = null;
+            for (int i = 0; i < index - 1; i++){
+                n = n.next;
+            }
+            n1 = n.next;
+            n.next = n1.next;
+        }
+    }
+
 
     public void showValues(){
         Node node = head;

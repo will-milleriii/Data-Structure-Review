@@ -13,6 +13,8 @@ public class Main {
        list.insertAtBeginning(21);
        list.insertAtIndex(3, 11);
 
+       list.deleteValueAtIndex(2);
+
        list.showValues();
 
     }
