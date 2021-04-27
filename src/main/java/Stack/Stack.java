@@ -18,9 +18,19 @@ public class Stack {
         return data;
     }
 
+    public int peak(){
+        int data;
+        data = stack[count - 1];
+        return data;
+    }
+
     public void show(){
         for (int n : stack){
             System.out.print(n + " ");
         }
+    }
+
+    public int size(){
+        return count;
     }
 }
