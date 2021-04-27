@@ -68,6 +68,7 @@ public class LinkedList {
             }
             n1 = n.next;
             n.next = n1.next;
+            n1 = null;
         }
     }
 
